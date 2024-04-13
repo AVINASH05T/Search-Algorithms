@@ -1,3 +1,6 @@
+# EXPERIMENT: 7
+## NAME: AVINASH T
+## REG NO: 212223230026
 # Linear Search and Binary search
 ## Aim:
 To write a program to perform linear search and binary search using python programming.
@@ -19,25 +22,78 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
-
-
-
+#DEVELOPED BY :AVINASH T
+#REG NO:212223230026
+#Use a linear search method to match the item in a list.
+def binarySearchIter(lst, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if lst[mid]==k:
+            return mid
+        elif lst[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+lst = eval(input())
+lst.sort()
+k = eval(input()) 
+print(lst)
+res=binarySearchIter(lst,k,0,len(lst)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
-
-
-
-
-
+#DEVELOPED BY :AVINASH T
+#REG NO:212223230026
+# Find the element in a list using Binary Search(Iterative Method).
+def binarySearchIter(lst, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if lst[mid]==k:
+            return mid
+        elif lst[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+lst= eval(input())
+lst.sort()
+k = eval(input()) 
+print(lst)
+res=binarySearchIter(lst,k,0,len(lst)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
-
-
-
-
-
+#DEVELOPED BY :AVINASH T
+#REG NO:212223230026
+# Find the element in a list using Binary Search (recursive Method).
+def binarySearchIter(lst, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if lst[mid]==k:
+            return mid
+        elif lst[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+lst = eval(input())
+lst.sort()
+k = eval(input()) 
+print(lst)
+res=binarySearchIter(lst,k,0,len(lst)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
 ## Sample Input and Output
 
